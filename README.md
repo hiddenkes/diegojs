@@ -22,7 +22,9 @@ diego({
 	
 This example creates a class named HelloWorld with a constructor that logs "Hello, World!". You can initialize an instance of the class using standard JavaScript:
 
-	var hw = new HelloWorld();
+```javascript
+var hw = new HelloWorld();
+```
 
 If you provide a function that has the same name as the class, it will be used as the constructor for the class. However, you do not have to provide a constructor in your class.
 
@@ -33,7 +35,7 @@ When creating classes, diego.js also attempts to parse out some Java keywords. B
 diego({
 	"public class HelloWorld": {
 		"public HelloWorld": function(){
-			console.log("Hello, " + this.hello + ""!");
+			console.log("Hello, " + this.hello + "!");
 		},
 		"private string hello": "world"
 	}
@@ -203,7 +205,7 @@ If an error occurs when setting the value of a property, then the value of the p
 ####Recycled Classes
 Recycled classes will be deleted after the main method in the class is called. If no main method is provided, the class will not be created. You can denote a class as recycled by adding "recycle" to the end of the class definition.
 
-```javascript
+```java
 diego({
 	"class Demo recycle": {
 		"static main": function(){
