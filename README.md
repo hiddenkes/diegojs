@@ -205,7 +205,7 @@ If an error occurs when setting the value of a property, then the value of the p
 ####Recycled Classes
 Recycled classes will be deleted after the main method in the class is called. If no main method is provided, the class will not be created. You can denote a class as recycled by adding "recycle" to the end of the class definition.
 
-```java
+```javascript
 diego({
 	"class Demo recycle": {
 		"static main": function(){
