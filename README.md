@@ -9,16 +9,16 @@ To start using diego.js, include it in your project. You can then start using it
 ####Hello World
 Diego.js works by accepting an object and parsing it to create classes. Below is a HelloWorld example that creates a simple class.
 	
-	```javascript
-	diego({
-		"class HelloWorld": {
-			"HelloWorld": function(){
-				console.log("Hello, " + this.hello + ""!");
-			},
-			"hello": "world"
-		}
-	});
-	```
+```javascript
+diego({
+	"class HelloWorld": {
+		"HelloWorld": function(){
+			console.log("Hello, " + this.hello + ""!");
+		},
+		"hello": "world"
+	}
+});
+```
 	
 This example creates a class named HelloWorld with a constructor that logs "Hello, World!". You can initialize an instance of the class using standard JavaScript:
 
