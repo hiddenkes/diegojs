@@ -8,7 +8,8 @@ To start using diego.js, include it in your project. You can then start using it
 
 ####Hello World
 Diego.js works by accepting an object and parsing it to create classes. Below is a HelloWorld example that creates a simple class.
-
+	
+	```javascript
 	diego({
 		"class HelloWorld": {
 			"HelloWorld": function(){
@@ -17,6 +18,7 @@ Diego.js works by accepting an object and parsing it to create classes. Below is
 			"hello": "world"
 		}
 	});
+	```
 	
 This example creates a class named HelloWorld with a constructor that logs "Hello, World!". You can initialize an instance of the class using standard JavaScript:
 
@@ -25,7 +27,7 @@ This example creates a class named HelloWorld with a constructor that logs "Hell
 If you provide a function that has the same name as the class, it will be used as the constructor for the class. However, you do not have to provide a constructor in your class.
 
 ####Some Java Keyword Compatability
-When creating classes, diego.js also attempts to parse out some Java keywords. Below is the same Hello World class above, but with included
+When creating classes, diego.js also attempts to parse out some Java keywords. Below is the same HelloWorld class above, but with some common Java keywords included.
 
 	diego({
 		"public class HelloWorld": {
